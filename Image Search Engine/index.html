@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Image Search Engine</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <img
+          src="/images/logo.svg"
+          height="40px"
+          width="40px"
+          alt=""
+          class="header-icon"
+        />
+        <h1 class="header-title h1">Image Search Engine</h1>
+
+        <form action="" class="search">
+          <div>
+            <label class="input-type"
+              ><input
+                type="radio"
+                name="input_type"
+                value="Text"
+                id="input_type_text"
+                class="type-of-input"
+                checked
+              />Text</label
+            >
+            <input
+              type="text"
+              class="search-input active"
+              placeholder="Search for Images"
+            />
+            <label class="input-type"
+              ><input
+                type="radio"
+                name="input_type"
+                value="Image"
+                id="input_type_image"
+                class="type-of-input"
+              />Image</label
+            >
+            <input type="file" class="search-file" height="25px" width="25px" />
+          </div>
+          <button class="search-button">Search</button>
+        </form>
+
+        <img
+          src="/images/menu-burger.svg"
+          height="25px"
+          width="25px"
+          alt=""
+          class="open-nav-btn"
+        />
+
+        <div class="navbar-shadow"></div>
+        <div class="navbar">
+          <img
+            src="/images/logo.svg"
+            alt=""
+            height="50px"
+            width="50px"
+            class="navbar-icon"
+          />
+          <h3 class="navbar-title">Categories</h3>
+          <a class="close-nav-btn">
+            <span class="close1"></span>
+            <span class="close2"></span>
+          </a>
+          <ul class="categories-list">
+            <li class="categories-item">Wallpaper</li>
+            <li class="categories-item">Nature</li>
+            <li class="categories-item">Black and White</li>
+            <li class="categories-item">Architecture</li>
+            <li class="categories-item">Travel</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="search-results">
+      <div class="search-result"></div>
+    </main>
+    <div class="image-box"></div>
+    <div class="custom-cursor"></div>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
