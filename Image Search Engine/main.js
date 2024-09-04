@@ -98,13 +98,10 @@ app.post('/upload', async (req, res) => {
     res.end(String(err))
     return
   }
-  // }
 })
 
 app.use((req, res) => {
   res.end('404 not found')
 })
 
-app.listen(PORT, () => {
-  console.log('Server listening on http://localhost:3000/')
-})
+app.listen(PORT)
