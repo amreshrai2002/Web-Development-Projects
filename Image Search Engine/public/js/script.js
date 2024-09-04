@@ -161,7 +161,7 @@ const searchImageByImage = async function () {
   const temp = formData
   console.log(temp)
 
-  fetch('/upload', {
+  fetch('http://localhost:3000/upload', {
     method: 'POST',
     body: formData,
   })
@@ -322,7 +322,7 @@ window.addEventListener('scroll', () => {
     document.querySelector('.header').classList.remove('active')
   }
   if (totalScrollPercent > 70 && lockScroll == false) {
-    // searchImages(inputData)
+    searchImages(inputData)
   }
 })
 
@@ -347,7 +347,3 @@ const dummyDivsContainer = () => {
     searchContainer[i % div].innerHTML += resultElement
   }
 }
-
-document.querySelector('.show-more-button').addEventListener('click', () => {
-  searchImages(inputData)
-})
